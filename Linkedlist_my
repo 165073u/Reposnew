@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class CreateLinkedListExample {
+    public static void main(String[] args) {
+      
+        LinkedList<String> friends = new LinkedList<>();
+
+      
+        friends.add("FRIEND1");
+        friends.add("FRIEND2");
+        friends.add("FRIEND3");
+        friends.add("FRIEND4");
+
+        System.out.println("Initial LinkedList : " + friends);
+
+        friends.add(3, "FRIEND5");
+        System.out.println("After add(3, \"FRIEND5\") : " + friends);
+
+     
+        friends.addFirst("FRIEND6");
+        System.out.println("After addFirst(\"FRIEND6\") : " + friends);
+
+        friends.addLast("Jennifer");
+        System.out.println("After addLast(\"Jennifer\") : " + friends);
+
+      
+        List<String> familyFriends = new ArrayList<>();
+        familyFriends.add("FRIEND7");
+        familyFriends.add("FRIEND8");
+
+        friends.addAll(familyFriends);
+        System.out.println("After addAll(familyFriends) : " + friends);
+    }
+}
